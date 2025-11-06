@@ -3,6 +3,6 @@ import { BusController } from './bus.controller.js';
 
 const router = express.Router();
 
-router.post('/user-bus', BusController.CreateBusController);
+router.post('/create-bus', BusController.CreateBusController);
 
 export const BusRoutes = router;

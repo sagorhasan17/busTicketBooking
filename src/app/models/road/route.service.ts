@@ -3,8 +3,8 @@ import { RouteModel } from "./route.model.js";
 
 
 const CreateRouteService = async(payLoad:IRoute) =>{
-    const bus = await RouteModel.create(payLoad);
-    return bus
+    const route = await RouteModel.create(payLoad);
+    return route
 }
 
 export const RouteService = {

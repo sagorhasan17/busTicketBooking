@@ -1,7 +1,7 @@
-import express from 'express';
+import exprss from 'express';
 import { AuthController } from './auth.controller.js';
 
-const router = express.Router();
+const router = exprss.Router();
 
 router.post('/login', AuthController.CreateAuthController);
 
