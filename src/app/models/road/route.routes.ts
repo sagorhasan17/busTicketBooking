@@ -5,4 +5,4 @@ const router = express.Router();
 
 router.post('/user-route', RouteController.CreateRouteController);
 
-export const BusRoutes = router;
+export const RouteRouters = router;
