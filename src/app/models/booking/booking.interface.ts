@@ -1,6 +1,7 @@
 import { Types } from "mongoose";
 
 export interface IBooking {
+  bookingId: string;
   userId: Types.ObjectId;          
   busId: Types.ObjectId;
   seatsBooked: number;

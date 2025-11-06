@@ -3,6 +3,7 @@ import type { IBooking } from "./booking.interface.js";
 
 const bookingSchema = new Schema<IBooking>(
   {
+    bookingId: { type: String, required: true },
     userId: { type: Schema.Types.ObjectId, ref: "User", required: true },
     busId: { type: Schema.Types.ObjectId, ref: "Bus", required: true },
     seatsBooked: { type: Number, required: true },
